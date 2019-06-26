@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game">
+      <section class="game-info">
+        <h1>Guess a num!<h1>
+        <h4>You can pick your nose || <br> you can pick a number.</h4>
+      </section>
+      <section class="game-config">
+        <pre>
+Configure your game. 
+Choose between which numbers you want to play and set difficulty. 
+Higher difficulty reduces number of guesses per game.
+        </pre>
+        <div class="row">
+          <input type="number" id="start-num" placeholder="First number">
+          <input type="number" id="end-num" placeholder="Last number">
+          <select name="Difficulty" id="game-difficulty">
+            <option value="Easy">Easy</option>
+            <option value="Normal" selected>Normal</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+        <input type="submit" class="button-primary" id="start-game_button" value="Start game">
+      </section>
+      <section class="game-body hidden">
+        <p>Guess a number between <span class="first-num"></span> and <span class="last-num"></span>.</p>
+        <input type="number" id="guessed-num" placeholder="Guess here">
+        <input type="submit" id="guessed-num_button" value="Submit">
+        <p class="message"></p>
+      </section>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
