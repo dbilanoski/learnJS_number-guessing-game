@@ -12,7 +12,7 @@ In my learningJS series here on Git Hub I will showcase simple applications buil
 
 
 ## Screenshots
-![Example screenshot](/images/screenshot.jpg)
+![Example screenshot](/images/screenshot.jpeg)
 
 ## Technologies
 * Skeleton - version 2. 0. 4
